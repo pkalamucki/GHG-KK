@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StrategyRoot
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema.xsd">
+	<Pack>
+		<Agent>CANZ</Agent>
+		<Strategy xsi:type="ZIP">
+			<strategyName>CANZStrategia1</strategyName>
+			<BetaMin>0.2</BetaMin>
+			<BetaMax>0.3</BetaMax>
+			<MarginStartMin>0.25</MarginStartMin>
+			<MarginStartMax>0.35</MarginStartMax>
+			<GammaMin>0.1</GammaMin>
+			<GammaMax>0.2</GammaMax>
+			<ConstraintA>0.198</ConstraintA>
+			<ConstraintB>0.16</ConstraintB>
+		</Strategy>
+	</Pack>
+	<Pack>
+		<Agent>USA</Agent>
+		<Strategy xsi:type="ZIP">
+			<strategyName>USAStrategia1</strategyName>
+			<BetaMin>0.2</BetaMin>
+			<BetaMax>0.3</BetaMax>
+			<MarginStartMin>0.25</MarginStartMin>
+			<MarginStartMax>0.35</MarginStartMax>
+			<GammaMin>0.1</GammaMin>
+			<GammaMax>0.2</GammaMax>
+			<ConstraintA>0.198</ConstraintA>
+			<ConstraintB>0.16</ConstraintB>
+		</Strategy>
+	</Pack>
+	<Pack>
+		<Agent>EU</Agent>
+		<Strategy xsi:type="ZIP">
+			<strategyName>EUStrategia1</strategyName>
+			<BetaMin>0.2</BetaMin>
+			<BetaMax>0.3</BetaMax>
+			<MarginStartMin>0.25</MarginStartMin>
+			<MarginStartMax>0.35</MarginStartMax>
+			<GammaMin>0.1</GammaMin>
+			<GammaMax>0.2</GammaMax>
+			<ConstraintA>0.198</ConstraintA>
+			<ConstraintB>0.16</ConstraintB>
+		</Strategy>
+	</Pack>
+	<Pack>
+		<Agent>WNP</Agent>
+		<Strategy xsi:type="ZIP">
+			<strategyName>WNPStrategia1</strategyName>
+			<BetaMin>0.2</BetaMin>
+			<BetaMax>0.3</BetaMax>
+			<MarginStartMin>0.25</MarginStartMin>
+			<MarginStartMax>0.35</MarginStartMax>
+			<GammaMin>0.1</GammaMin>
+			<GammaMax>0.2</GammaMax>
+			<ConstraintA>0.198</ConstraintA>
+			<ConstraintB>0.16</ConstraintB>
+		</Strategy>
+	</Pack>
+	<Pack>
+		<Agent>Japonia</Agent>
+		<Strategy xsi:type="ZIP">
+			<strategyName>JaponiaStrategia1</strategyName>
+			<BetaMin>0.2</BetaMin>
+			<BetaMax>0.3</BetaMax>
+			<MarginStartMin>0.25</MarginStartMin>
+			<MarginStartMax>0.35</MarginStartMax>
+			<GammaMin>0.1</GammaMin>
+			<GammaMax>0.2</GammaMax>
+			<ConstraintA>0.198</ConstraintA>
+			<ConstraintB>0.16</ConstraintB>
+		</Strategy>
+	</Pack>
+</StrategyRoot>

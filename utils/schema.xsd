@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+
+
+	<xs:element name="StrategyRoot" type="StrategyRoot" />
+
+	<xs:complexType name="StrategyRoot">
+		<xs:sequence>
+			<xs:element name="Pack" type="Pack"  minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>			
+	</xs:complexType>
+	
+	<xs:complexType name="Pack">
+		<xs:sequence>
+			<xs:element name="Agent" type="xs:string" maxOccurs="1"/>
+			<xs:element name="Strategy" type="Strategy" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>		
+			
+	<xs:complexType name="Strategy" abstract="true">		
+		<xs:sequence>
+			<xs:element name="strategyName" type="xs:string" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ZIP">
+		<xs:complexContent>
+            <xs:extension base="Strategy">
+				<xs:sequence>
+					<xs:element name="BetaMin" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="BetaMax" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="MarginStartMin" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="MarginStartMax" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="GammaMin" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="GammaMax" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="ConstraintA" type="xs:double" minOccurs="1" maxOccurs="1" />
+					<xs:element name="ConstraintB" type="xs:double" minOccurs="1" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+        </xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="ZIP60">
+		<xs:complexContent>
+            <xs:extension base="Strategy">
+				<xs:sequence>
+					<xs:element name="Parameter" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+        </xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>
